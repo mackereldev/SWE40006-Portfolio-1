@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-	<Package Id="mackereldev.ColorConverterSetup" Name="Color Converter" Manufacturer="mackereldev" Version="1.0.0">
+	<Package Id="mackereldev.ColorConverterSetup" Name="Color Converter" Manufacturer="mackereldev" Version="0.0.1">
 		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
 		<MediaTemplate EmbedCab="yes" />
