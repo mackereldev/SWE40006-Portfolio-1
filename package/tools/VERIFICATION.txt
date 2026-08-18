@@ -1,0 +1,12 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Binaries are installed under the standard Windows program directory: 'C:\Program Files' on 64-bit systems and 'C:\Program Files' for 32-bit systems.
+On a 64-bit machine for example, the binaries will be installed to 'C:\Program Files\mackereldev\Color Converter'.
+
+The MD5 checksums should be as follows:
+    ColorConverter.exe: 431BDFDA70EC5ED6DF96AE828F183480
+    ColorConverter.dll: 123370A8F00D26293EBAE94A2988311C
+
+Note: This package is maintained by the vendor of ColorConverter.
