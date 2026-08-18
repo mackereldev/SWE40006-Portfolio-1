@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>swe40006-colorconverter</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/mackereldev/SWE40006-Portfolio-Task-1</packageSourceUrl>
+    <owners>mackereldev</owners>
+
+    <title>Color Converter</title>
+    <authors>mackereldev</authors>
+    <copyright>2026 Saba Shaw</copyright>
+    <licenseUrl>https://spdx.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+
+    <projectUrl>https://github.com/mackereldev/SWE40006-Portfolio-Task-1</projectUrl>
+    <projectSourceUrl>https://github.com/mackereldev/SWE40006-Portfolio-Task-1</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/mackereldev/SWE40006-Portfolio-Task-1/issues</bugTrackerUrl>
+
+    <tags>SWE40006 Swinburne Academic</tags>
+    <summary>Convert hexadecimal colors to other CSS-compatible forms.</summary>
+    <description>A demonstrative CLI application for Swinburne's SWE40006 unit.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
