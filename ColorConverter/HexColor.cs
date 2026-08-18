@@ -19,6 +19,29 @@ public class HexColor {
 		}
 	}
 
+	/// <summary>
+	/// Get the luminance of this color as per the corrected WCAG 2.x definition. <see href="https://www.w3.org/WAI/GL/wiki/Relative_luminance"/>
+	/// </summary>
+	public double GetLuminance() {
+		static double StandardToLinear(double standard) {
+			if (standard <= 0.04045) {
+				return standard / 12.92;
+			} else {
+				return Math.Pow(((standard + 0.055) / 1.055), 2.4);
+			}
+		}
+		
+		double sR = HexUtil.ToDecimal(RedComp) / 255.0;
+		double sG = HexUtil.ToDecimal(GreenComp) / 255.0;
+		double sB = HexUtil.ToDecimal(BlueComp) / 255.0;
+
+		double lR = StandardToLinear(sR);
+		double lG = StandardToLinear(sG);
+		double lB = StandardToLinear(sB);
+
+		return 0.2126 * lR + 0.7152 * lG + 0.0722 * lB;
+	}
+
 	public override string ToString() {
 		return $"#{hex}";
 	}
